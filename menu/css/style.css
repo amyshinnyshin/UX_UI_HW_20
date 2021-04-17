@@ -1,0 +1,93 @@
+.menuOption {
+  cursor: pointer;
+  display: block;
+  font-family: 'Neufreit';
+  font-size: 36px;
+  color: #000000;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgb(27, 27, 27); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-contentTabs {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  /* The navigation links inside the overlay */
+  .menuText {
+    font-family: 'Neufreit';
+    font-size: 125px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  .contact {
+    font-family: 'Neufreit';
+    font-size: 125px;
+    color: #8DA7E0;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 100px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Neufreit';
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .overlay-contentFooter {
+    padding-top: 2%;
+    padding-bottom: 0;
+    padding-right: 2%;
+    padding-left: 72%;
+    display: grid;
+    grid-template-columns: 2fr .5fr .5fr .5fr;
+    grid-template-rows: 20px 20px;
+    position: absolute;
+    bottom: 0;
+ }
+ .whiteGrid-item p {
+     text-align: right;
+     color: #ffffff;
+     font-family: 'Spartan';
+     font-size: 16px;
+ }
+ 
+ .grid-item {
+   padding: 15px;
+   justify-self: flex-start;
+ }
